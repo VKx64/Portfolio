@@ -9,20 +9,15 @@ export default function Home() {
       </div>
 
       <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-        
-        
-        <div className="flex items-start gap-8">
-
+        <div className="flex items-start h-full gap-8 bg-red-600">
           {/* Image Section */}
           <div className="p-[2px] bg-white rounded-lg pointer-events-auto">
             <div className="w-[300px] h-[500px] overflow-hidden rounded-lg bg-neutral-800">
               <Image
-                src="/images/profile.png"
+                src="/images/filter_profile.jpg"
                 alt="Profile Image"
                 width={100}
                 height={300}
-                quality={100}
-                unoptimized
                 className="w-full h-full object-cover"
               />
             </div>
@@ -39,7 +34,6 @@ export default function Home() {
               Automates with Python to simplify workflow.
             </p>
           </div>
-
         </div>
       </div>
     </div>

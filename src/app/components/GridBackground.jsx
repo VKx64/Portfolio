@@ -32,9 +32,9 @@ export default function GridBackground() {
             {Array.from({ length: dimensions.rows * dimensions.cols }).map((_, index) => (
                 <div
                 key={index}
-                className="w-full h-full border-[0.1px] border-zinc-800 transition-colors duration-2000 hover:bg-zinc-50"
+                className="w-full h-full border-[0.1px] border-zinc-800 transition-colors duration-2000 hover:bg-neutral-100 ease-out"
                 ></div>
             ))}
         </div>
     );
-}
+};
