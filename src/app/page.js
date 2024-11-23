@@ -32,7 +32,7 @@ export default function Home() {
           {/* Text Section */}
           <div className="text-white select-none">
             <h1 className="text-6xl font-bold leading-tight">
-              <span className="opacity-35">Hey, </span>I'm Kylle,<br />
+            <span className="opacity-35">Hey, </span>I&#39;m Kylle,<br />
               <span className="opacity-35">A </span>Full-Stack Developer.
             </h1>
             <p className="text-md mt-4 opacity-35">
