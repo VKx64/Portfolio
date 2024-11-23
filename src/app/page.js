@@ -1,5 +1,8 @@
 import Image from "next/image";
 import GridBackground from "./components/GridBackground";
+import CopyButton from "./components/CopyButton";
+import DownloadButton from "./components/DownloadButton";
+import HighlightedButton from "./components/HighlightedButton";
 
 export default function Home() {
   return (
@@ -9,8 +12,6 @@ export default function Home() {
       </div>
 
       <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-        
-        
         <div className="flex items-start gap-8">
 
           {/* Image Section */}
@@ -31,15 +32,29 @@ export default function Home() {
           {/* Text Section */}
           <div className="text-white select-none">
             <h1 className="text-6xl font-bold leading-tight">
-              <span className="opacity-45">Hey, </span>I'm Kylle,<br />
-              <span className="opacity-45">A </span>Full-Stack Developer.
+              <span className="opacity-35">Hey, </span>I'm Kylle,<br />
+              <span className="opacity-35">A </span>Full-Stack Developer.
             </h1>
-            <p className="text-lg mt-4 text-gray-300">
+            <p className="text-md mt-4 opacity-35">
+              21 y/o • Male • Philippines
+            </p>
+            <p className="text-xl mt-4">
               Software developer delivering functional and modern apps.<br />
               Automates with Python to simplify workflow.
             </p>
-          </div>
 
+            <div className="pointer-events-auto mt-10 flex flex-row gap-4">
+              <CopyButton
+              textValue={"K-Developer@zofky.com"}/>
+
+              <DownloadButton
+              textValue={"Download CV"}/>
+
+              <HighlightedButton
+              textValue={"Available For Work"}/>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
