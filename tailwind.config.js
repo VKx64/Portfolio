@@ -21,6 +21,9 @@ module.exports = {
       transitionDuration: {
         '2000': '2000ms'
       },
+      width: {
+        '128': '32rem',
+      },
     },
   },
   plugins: [],

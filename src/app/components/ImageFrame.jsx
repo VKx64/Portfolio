@@ -4,13 +4,16 @@ import Image from "next/image";
 
 const ImageFrame = () => {
   return (
-    <div className="relative w-[300px] h-[400px] rounded-xl overflow-hidden border border-gray-700">
+    <div className="relative w-full h-full rounded-xl overflow-hidden border border-white border-2">
       <Image
-        src="/images/profile.jpg"
+        src="/images/profile.png"
         alt="portfolio"
-        width={300}
-        height={400}
-        objectFit="cover"
+        fill
+        priority={true}
+        unoptimized
+        loading="eager"
+        quality={100}
+        style={{ objectFit: "cover" }}
         className="rounded-xl"
       />
     </div>
